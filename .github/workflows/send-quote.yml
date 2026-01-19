@@ -19,4 +19,7 @@ jobs:
           python-version: "3.11"
 
       - name: Run script
+        env:
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         run: python main.py
