@@ -21,7 +21,7 @@ if day < 7 and day > 0: #this will send the message every time the code is run.
                 connection.login(user=my_email,password=my_password)
                 connection.sendmail(
                     from_addr=my_email,
-                    to_addrs="stephenlancaster23@gmail.com",
+                    to_addrs="stephenpythontest2025@gmail.com",
                     msg=f"Subject:Quote\n\n{random_quote}"
                 )
 
