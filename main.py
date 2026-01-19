@@ -1,21 +1,10 @@
-# import smtplib
-#
-my_email = "stephenpythontest2025@gmail.com"
-my_password="pwdxhvavfgwouybk"
-#
-# connection = smtplib.SMTP("smtp.gmail.com")#gives the server name to connect to
-# connection.starttls()#this is security that engrypts the message to stop it being read if intercepted.
-# connection.login(user=my_email,password=my_password)#my email details
-# connection.sendmail(
-#     from_addr=my_email,
-#     to_addrs="stephenlancaster23@gmail.com",
-#     msg="Subject:Hello\n\n this is a test from my app")#details of email
-#
-# connection.close()#closes the connection.
-
+import os
 import datetime as dt
 from random import choice
 import smtplib
+
+my_email = os.environ["EMAIL_ADDRESS"]
+my_password= os.environ["EMAIL_PASSWORD"]
 
 now = dt.datetime.now()
 day = now.weekday()
